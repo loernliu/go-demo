@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Hello</title>
+</head>
+
+<body>
+
+</body>
+<script>
+	// 获取access_token
+	const query = window.location.search.substring(1)
+	const username = query.split('username=')[1]
+
+	const nameNode = document.createTextNode(`Welcome, ${username}`)
+	document.body.appendChild(nameNode)
+</script>
